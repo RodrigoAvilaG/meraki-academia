@@ -1,32 +1,48 @@
-import React from 'react'
-import { Nav, NavLink, Bars, NavMenu, NavBtn,
-    NavBtnLink} from './NavbarElements'
+import React from "react";
+import { FaBars } from "react-icons/fa";
+import {
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  MobileIcon,
+  MobileLogo,
+  NavMenu,
+  NavItem,
+  NavLinks,
+  NavBtn,
+  NavBtnLink,
+} from "./NavbarElements";
 
-const Navbar = () => {
-    return (
-        <>
-            <Nav>
-                <NavLink to="/">
-                    <h1>Meraki</h1>
-                </NavLink>
-                <Bars />
-                <NavMenu>
-                    <NavLink to="/about" activeStyle>
-                        Academia
-                    </NavLink>
-                    <NavLink to="/clases" activeStyle>
-                        Clases
-                    </NavLink>
-                    <NavLink to="/recetas" activeStyle>
-                        Recetas
-                    </NavLink>
-                    <NavLink to="/contacto" activeStyle>
-                        Contactanos
-                    </NavLink>
-                </NavMenu>
-            </Nav>
-        </>
-    )
-}
+const Navbar = ({ toggle }) => {
+  return (
+    <>
+      <Nav>
+        <NavbarContainer>
+          <NavLogo to="/">Meraki</NavLogo>
+          <MobileIcon onClick={toggle}>
+            <FaBars />
+          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="academia">Academia</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="clases">Clases</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="recetas">Recetas</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="contactanos">Contactanos</NavLinks>
+            </NavItem>
+          </NavMenu>
+          <NavBtn>
+            <NavBtnLink to="/carrito">Carrito</NavBtnLink>
+          </NavBtn>
+        </NavbarContainer>
+      </Nav>
+    </>
+  );
+};
 
 export default Navbar;
