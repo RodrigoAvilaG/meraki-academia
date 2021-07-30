@@ -37,7 +37,7 @@ const HeroSection = () => {
           <HeroH1>Academia de Cocina Saludable Integral</HeroH1>
           <HeroP>
             Meraki Academia es lugar dónde te ayudamos a que aprendas a cocinar
-            lo que tanto te gusta de una manera saludable, deliciosa y práctica
+            lo que tanto te gusta de una manera saludable, deliciosa y práctica,
             para sumar a tu bienestar integral y a un mundo mejor y más
             sostenible.
           </HeroP>
