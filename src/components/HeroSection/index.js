@@ -43,7 +43,7 @@ const HeroSection = () => {
           </HeroP>
           <HeroBtnWrapper>
             <Button
-              to="clases"
+              to="pagos"
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary="true"
@@ -54,7 +54,7 @@ const HeroSection = () => {
               exact={true}
               offset={-80}
             >
-              Clases {hover ? <ArrowForward /> : <ArrowRight />}
+              Compra Segura {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtnWrapper>
         </HeroContent>

@@ -25,7 +25,7 @@ export const pagosInfo = {
   topLine: "Pago seguros",
   headLine: "Paga de forma segura con PayPal",
   description:
-    "Nosotros no gestionaremos ningun pago, dejamos que una plataforma segura como PayPal se encargue de todo",
+    "Nosotros no gestionaremos ningun pago, dejamos que una plataforma segura como PayPal se encargue de todo, unete a una clase.",
   buttonLabel: "Intenta ahora",
   imgStart: true,
   img: require("../../images/svg-6.svg").default,
