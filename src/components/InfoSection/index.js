@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "../ButtonElements";
-import ImgF from "../../images/svg-1.svg"
 
 import {
   InfoContainer,
@@ -30,9 +29,11 @@ export const InfoSection = ({
   img,
   alt,
   primary,
+  redirect,
   dark,
-  dark2
+  dark2,
 }) => {
+
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -45,7 +46,7 @@ export const InfoSection = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
-                    to="home"
+                    to={redirect}
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -62,7 +63,7 @@ export const InfoSection = ({
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={ImgF} alt={alt} />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>

@@ -43,11 +43,16 @@ const HeroSection = () => {
           </HeroP>
           <HeroBtnWrapper>
             <Button
-              to="signup"
+              to="clases"
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary="true"
               dark="true"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact={true}
+              offset={-80}
             >
               Clases {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
